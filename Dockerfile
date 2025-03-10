@@ -11,7 +11,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Use a minimal Java runtime for running the app
-FROM eclipse-temurin:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 
 # Set working directory
 WORKDIR /app
